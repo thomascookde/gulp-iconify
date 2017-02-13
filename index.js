@@ -148,7 +148,9 @@ module.exports = function(opts) {
             .pipe(sass({
                 outputStyle: 'compressed'
             }))
-            .pipe(gulp.dest(opts.cssOutput));
+            .pipe(gulp.dest(opts.cssOutput)).on('end', function() {
+                if(opts.callback) opts.callback();
+            });
 
         return stream;
     });
