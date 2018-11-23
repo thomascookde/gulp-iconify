@@ -21,7 +21,7 @@
     "domain": "*",
     "fs": "*",
     "gulp": "*",
-    "gulp-sass": "~2.1.0",
+    "gulp-sass": "^4.0.2",
     "gulp-svg2png": "~1.0.0",
     "gulp-util": "~3.0.4",
     "imacss": "~0.3.0",
